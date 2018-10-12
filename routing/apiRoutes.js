@@ -7,4 +7,6 @@ app.get("/api/friends", function(req, res) {
 // A POST routes /api/friends
 // handle incoming survey results and used to handle compatibility logic
 app.post("/api/friends", function(req, res) {
-    
+    finderArray.push(req.body);
+    res.json(true);
+});
